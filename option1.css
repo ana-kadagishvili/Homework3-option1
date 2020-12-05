@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.yellow {
+    width: 28%;
+    height: 100%;
+    background-color:yellow ;
+}
+.orange {
+    width: 70%;
+    height: 100%;
+    background-color:orange ;
+}
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: darkviolet;
+    margin-bottom: 20px;
+}
+section {
+    width: 100%;
+    height: 250px;
+    background-color: dodgerblue;
+    margin-bottom: 20px;
+}
+article {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+article > div {
+    width: 32%;
+    background-color: cornflowerblue;
+}
+.div-five {
+    background-color: #FFFFFF !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div-five > div {
+    height: 20px;
+    background-color: grey;
+}
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: cornflowerblue;
+}
+
+/* For Tablets */
+@media (min-width: 480px) and (max-width: 1024px) {
+    header {
+        height: 80px;
+    }
+    nav {
+        height: 50px;
+    }
+    section {
+        height: 150px;
+    }
+    article {
+        height: 200px;
+    }
+    .div-five > div {
+        height: 10px;
+    }
+    footer {
+        height: 100px;
+    }
+}
+
+/* For Mobile */
+@media (max-width: 480px) {
+    header {
+        height: 100px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .yellow {
+        width: 100%;
+        height: 42px;
+    }
+    .orange {
+        margin-top: 16px;
+        width: 100%;
+        height: 42px;
+    }
+    nav {
+        height: 35px;
+    }
+    section {
+        height: 150px;
+    }
+    article {
+        height: 570px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    article > div {
+        width: 100%;
+        height: 170px;
+        margin-bottom: 20px;
+    }
+    .div-five > div {
+        height: 10px;
+    }
+    footer {
+        height: 100px;
+    }
+}
